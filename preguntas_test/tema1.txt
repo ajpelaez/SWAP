@@ -1,0 +1,16 @@
+<pregunta>
+  <enunciado>¿Que es una granja web?</enunciado>
+  <opcionA>Un conjunto de sitios web con una tematica común.</opcionA>
+  <opcionB>Un conjunto de servidores dedicados a servir contenido web a los usuarios finales.</opcionB>
+  <opcionC>Una web con temática de animales de granja.</opcionC>
+  <opcionD>Un conjunto de sitios web alojados en el mismo servidor.</opcionD>
+  <solucion>B</solucion>
+</pregunta>
+<pregunta>
+  <enunciado>¿Que es un cold spare server?</enunciado>
+  <opcionA>Es un servidor de refrigeración.</opcionA>
+  <opcionB>Es servidor de repuesto.</opcionB>
+  <opcionC>Es una máquina servidor replicada que usaremos en caso de que la principal falle.</opcionC>
+  <opcionD>Es un servidor que usaremos para hacer pruebas de software.</opcionD>
+  <solucion>C</solucion>
+</pregunta>
