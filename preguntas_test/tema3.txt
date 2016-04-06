@@ -1,0 +1,16 @@
+<pregunta>
+  <enunciado>Un backbone se puede formar con:</enunciado>
+  <opcionA>Varios servidores y un router.</opcionA>
+  <opcionB>Varios servidores y un switch.</opcionB>
+  <opcionC>Un hub.</opcionC>
+  <opcionD>Un switch, un router o un hub.</opcionD>
+  <solucion>D</solucion>
+</pregunta>
+<pregunta>
+  <enunciado>¿Cual es la alternativa más segura para conectar la granja web a otras redes?</enunciado>
+  <opcionA>Configuración de DMZ simple.</opcionA>
+  <opcionB>Configuración de DMZ tradicional.</opcionB>
+  <opcionC>Configuración de DMZ doble.</opcionC>
+  <opcionD>Configuración sin DMZ.</opcionD>
+  <solucion>C</solucion>
+</pregunta>

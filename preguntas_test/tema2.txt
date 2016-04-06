@@ -1,0 +1,16 @@
+<pregunta>
+  <enunciado>¿Para que es útil la monitorización?</enunciado>
+  <opcionA>Para detectar problemas y determinar posibles mejoras del sitio web.</opcionA>
+  <opcionB>Para saber lo que esta haciendo el sistema en cualquier momento.</opcionB>
+  <opcionC>Para controlar el desarrollo de una acción o un suceso a través de uno o varios monitores.</opcionC>
+  <opcionD>Para poder gestionar nuestra máquina a través de un monitor.</opcionD>
+  <solucion>A</solucion>
+</pregunta>
+<pregunta>
+  <enunciado>¿Que hace un balanceador de carga?</enunciado>
+  <opcionA>Se encarga de bloquear el tráfico de red si el servidor esta sobrecargado.</opcionA>
+  <opcionB>Hace que llegue menos tráfico de red al servidor.</opcionB>
+  <opcionC>Reparte peticiones a los distintos servidores según el tráfico de la red.</opcionC>
+  <opcionD>Es un servidor con un software específico que analiza el tráfico de red.</opcionD>
+  <solucion>C</solucion>
+</pregunta>
