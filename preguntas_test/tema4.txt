@@ -1,0 +1,16 @@
+<pregunta>
+  <enunciado>¿Que es un centro de datos?</enunciado>
+  <opcionA>El servidor donde se almacenan los datos.</opcionA>
+  <opcionB>Varios servidores que almacenan datos.</opcionB>
+  <opcionC>Un edificio con alta seguridad, refrigeración controlada, alimentación continua y sistemas antiicendios.</opcionC>
+  <opcionD>Los servidores de la granja web que se encargan del almacenamiento de datos.</opcionD>
+  <solucion>C</solucion>
+</pregunta>
+<pregunta>
+  <enunciado>¿Como se puede implementar el balanceo de carga global?</enunciado>
+  <opcionA>Con un cortafuegos.</opcionA>
+  <opcionB>Con un balanceador de carga software.</opcionB>
+  <opcionC>Con un balanceador de carga hardware.</opcionC>
+  <opcionD>Con los DNS o con BGP.</opcionD>
+  <solucion>D</solucion>
+</pregunta>
