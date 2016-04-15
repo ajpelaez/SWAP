@@ -17,7 +17,7 @@ Empezamos por ver que no tenga ningun proceso funcionando en el puerto 80 con el
 netstat -tulpn | grep :80 
 En mi caso tenía apache2 en este puerto por lo que paro el servicio: 
 service apache2 stop 
-Comprobamos que tenga conexión con las máquinas 1 y 2 : 
+Comprobamos que tenga conexión con las máquinas 1 y 2 :  
 ![alt](http://i.imgur.com/9ijbUwI.png)  
 Con el comando curl de paso también comprobamos que la configuración que hicimos anteriormente esta funcionando correctamente pues al hacer curl a cada máquina nos muestra el correspondiente Hola soy la máquinaX. 
  
@@ -28,9 +28,9 @@ Ahora editamos el archivo de configuración de nginx:
 nano /etc/nginx/sites-available/default
 Y lo dejamos asi: 
 ![alt](http://i.imgur.com/9fHWua1.png)  
-Reiniciamos nginx: 
-service nginx restart 
-Comprobamos que funciona desde otra máquina conectada en la misma red: 
+Reiniciamos nginx:  
+service nginx restart  
+Comprobamos que funciona desde otra máquina conectada en la misma red:  
 ![alt](http://i.imgur.com/vhCwIqZ.png) 
 
 
