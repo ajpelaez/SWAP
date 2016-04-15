@@ -24,9 +24,9 @@ Con el comando curl de paso también comprobamos que la configuración que hicimos
 **-Comenzamos con la instalación de nginx como balanceador:**  
 apt-get update 
 apt-get install nginx 
-Ahora editamos el archivo de configuración de nginx: 
-nano /etc/nginx/sites-available/default
-Y lo dejamos asi: 
+Ahora editamos el archivo de configuración de nginx:  
+nano /etc/nginx/sites-available/default  
+Y lo dejamos asi:  
 ![alt](http://i.imgur.com/9fHWua1.png)  
 Reiniciamos nginx:  
 service nginx restart  
