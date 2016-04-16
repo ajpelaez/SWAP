@@ -34,9 +34,10 @@ Comprobamos que funciona desde otra máquina conectada en la misma red:
 ![alt](http://i.imgur.com/vhCwIqZ.png)  
 Como vemos funciona correctamente, ahora asignameros a la máquina1 weight=2 en el fichero de configuración para que reparta el doble de carga sobre la máquina1. Y comprobamos que funcione:  
 ![alt](http://i.imgur.com/12Ypeeg.png)  
-
+  
 
 **-Comenzamos con la instalación de haproxy como balanceador:**  
+  
 Para esto vamos a clonar la máquina que usamos como balanceador anteriormente, lo primero que haremos una vez clonada sera parar nginx:  
 service nginx stop  
 Ahora empezamos a instalar haproxy:  
@@ -48,7 +49,7 @@ Ejecutamos haproxy:
 /usr/sbin/haproxy -f /etc/haproxy/haproxy.cfg  
 Y comprobamos que funcione correctamente:  
 ![alt](http://i.imgur.com/0AReyp1.png)  
-Ahora editaremos el archivo de configuracion para repartir el doble de carga en la máquina1:  
+Ahora editaremos el archivo de configuracion para repartir el doble de carga en la máquina1 y volvemos a ejecutar haproxy con el comando anterior:  
 ![alt](http://i.imgur.com/ITaxyuZ.png)  
 Y comprobamos que funcione:  
 ![alt](http://i.imgur.com/rbSDNuz.png)  
