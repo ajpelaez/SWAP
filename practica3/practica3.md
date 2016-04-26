@@ -21,7 +21,7 @@ Comprobamos que tenga conexión con las máquinas 1 y 2 :
 ![alt](http://i.imgur.com/9ijbUwI.png)  
 Con el comando curl de paso también comprobamos que la configuración que hicimos anteriormente esta funcionando correctamente pues al hacer curl a cada máquina nos muestra el correspondiente Hola soy la máquinaX. 
  
-**-Comenzamos con la instalación de nginx como balanceador:**  
+**-Instalación de nginx como balanceador:**  
 apt-get update 
 apt-get install nginx 
 Ahora editamos el archivo de configuración de nginx:  
@@ -36,7 +36,7 @@ Como vemos funciona correctamente, ahora asignameros a la máquina1 weight=2 en e
 ![alt](http://i.imgur.com/12Ypeeg.png)  
   
   
-**-Comenzamos con la instalación de haproxy como balanceador:**  
+**-Instalación de haproxy como balanceador:**  
 Para esto vamos a clonar la máquina que usamos como balanceador anteriormente, lo primero que haremos una vez clonada sera parar nginx:  
 service nginx stop  
 Ahora empezamos a instalar haproxy:  
@@ -54,8 +54,24 @@ Y comprobamos que funcione:
 ![alt](http://i.imgur.com/rbSDNuz.png)  
 
  
-
-
+**-Instalación de Zen load balancer:**  
+Lo primero es descargar la iso, montar la máquina virtual, instalarlo todo. Una vez hecho esto lo siguiente es configurar las interfaces desde el interfaz web para que vea a las máquinas que sirven el contenido web.  
+Accedemos a la interfaz web desde: https://192.168.0.110:444 (192.168.0.110 es la IP que le asignamos anteriormente en la instalación).  
+Entramos con admin:admin  y nos vamos a la sección settings -> interfaces.  
+Una vez aqui configuramos la interfaz de nuestra red interna:  
+![alt](http://i.imgur.com/BaRdXIG.png)  
+Después de esto comprobamos que podamos hacer ping desde nuestra máquina balanceador a las otras dos.  
+Una vez esta todo correcto, pasamos a crear la "Granja web".  
+Nos vamos a manage -> farms y creamos una nueva http:  
+![alt](http://i.imgur.com/e3M4gWu.png)  
+Después pasamos a configurarla dejándola asi:  
+![alt](http://i.imgur.com/kckkJcV.png)  
+Añadimos un nuevo servicio, al que tenemos que agregar los 2 servidores reales:  
+![alt](http://i.imgur.com/4cMJnOj.png)  
+Después reiniciamos la granja y comprobamos que todo este funcionando correctamente:  
+![alt](http://i.imgur.com/7Y2Ms8w.png)  
+  
+Como vemos el balanceador esta funcionando correctamente.
  
 
 
