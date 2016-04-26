@@ -71,7 +71,7 @@ Añadimos un nuevo servicio, al que tenemos que agregar los 2 servidores reales:
 Después reiniciamos la granja y comprobamos que todo este funcionando correctamente:  
 ![alt](http://i.imgur.com/7Y2Ms8w.png)  
   
-Como vemos el balanceador esta funcionando correctamente.
+Como vemos el balanceador esta funcionando correctamente.  
  
 
 
