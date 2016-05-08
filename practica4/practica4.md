@@ -23,7 +23,7 @@ archivo para realizar la prueba
 **[Apache Benchmark] Prueba a 1 servidor solo:**   
   
 Entramos en la máquina de pruebas, y lanzamos el comando:  
-    ab -n 1000 -c 5 http://192.168.1.51/prueba.html > test.txt  
+ab -n 1000 -c 5 http://192.168.1.51/prueba.html > test.txt  
 Asi los resultados del test se nos guardaran en test.txt, hacemos un nano o un cat a este archivo para verlos y los metemos en nuestra tabla excel, hasta completar 10 pruebas y generar un gráfico.  
   
 ![alt](http://i.imgur.com/Q5qvt48.png)  
