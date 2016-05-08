@@ -1,0 +1,16 @@
+<pregunta>
+  <enunciado>Cual no es una métrica para medir prestaciones de balanceadores:</enunciado>
+  <opcionA>Conexiones por segundo.</opcionA>
+  <opcionB>Número total de conexiones.</opcionB>
+  <opcionC>Rendimiento (en bits por segundo).</opcionC>
+  <opcionD>FPS. Fotogramas por segundo.</opcionD>
+  <solucion>D</solucion>
+</pregunta>
+<pregunta>
+  <enunciado>Que métrica seria más importante para una tienda web:</enunciado>
+  <opcionA>Conexiones por segundo.</opcionA>
+  <opcionB>Rendimiento.</opcionB>
+  <opcionC>Total de conexiones concurrentes.</opcionC>
+  <opcionD>Ninguna de las anteriores.</opcionD>
+  <solucion>C</solucion>
+</pregunta>

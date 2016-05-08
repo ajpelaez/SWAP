@@ -1,0 +1,16 @@
+<pregunta>
+  <enunciado>Cual de estos no es un objetivo de seguridad:</enunciado>
+  <opcionA>Confidencialidad.</opcionA>
+  <opcionB>Integridad.</opcionB>
+  <opcionC>Rendimiento.</opcionC>
+  <opcionD>Disponibilidad.</opcionD>
+  <solucion>C</solucion>
+</pregunta>
+<pregunta>
+  <enunciado>El cortafuegos debe:</enunciado>
+  <opcionA>Estar configurado independientemente del resto de recursos.</opcionA>
+  <opcionB>Ejecutar otro software a parte del cortafuegos.</opcionB>
+  <opcionC>Mostrar su IP.</opcionC>
+  <opcionD>Registrar la IP en un servicio de DNS.</opcionD>
+  <solucion>A</solucion>
+</pregunta>
