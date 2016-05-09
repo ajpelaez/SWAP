@@ -77,9 +77,32 @@ Recopilamos los datos de 10 ejecuciones en la siguiente tabla:
   
 ![alt](http://i.imgur.com/Uln8zp5.png)  
   
-
- 
-
+  
+**[Httperf] Prueba a 1 servidor solo:**  
+Primero instalamos httperf con:  
+apt-get install httperf  
+Ahora lanzaremos el comando para realizar la prueba:  
+httperf --server=192.168.1.51 --uri=/prueba.html --timeout=10 --num-conns=2000  
+Esto quiere decir que pediremos el archivo prueba.html de nuestro servidor, que enviaremos 2000 peticiones y que esperaremos 10 segundos si no recibimos respuesta del servidor.  La salida que nos da es la siguiente:  
+![alt](http://i.imgur.com/U2Cm1YG.png)  
+  
+Recopilamos los datos de 10 ejecuciones en la siguiente tabla:  
+![alt](http://i.imgur.com/pdx6yDo.png)  
+  
+**[Httperf] Prueba balanceador nginx:**  
+httperf --server=192.168.1.53 --uri=/prueba.html --timeout=10 --num-conns=2000  
+Recopilamos los datos de 10 ejecuciones en la siguiente tabla:  
+![alt](http://i.imgur.com/J5iyoJE.png)  
+  
+**[Httperf] Prueba balanceador haproxy:**  
+httperf --server=192.168.1.53 --uri=/prueba.html --timeout=10 --num-conns=2000  
+Recopilamos los datos de 10 ejecuciones en la siguiente tabla:  
+![alt](http://i.imgur.com/1e7i9kd.png)  
+  
+  
+**[Httperf] Comparaciones:**  
+![alt](http://img.prntscr.com/img?url=http://i.imgur.com/LeobCcO.png)  
+  
 
 
 
