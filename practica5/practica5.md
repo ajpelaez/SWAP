@@ -4,6 +4,8 @@ IP Máquina1: 192.168.1.51
 IP Máquina2: 192.168.1.52  
 Sistema Operativo: Debian 8
 
+***
+
 **Creación de la base de datos y inserción:**  
   
 En primer lugar comenzaremos creando la bd y añadiendo algunos datos en nuestra máquina1:  
@@ -11,7 +13,7 @@ En primer lugar comenzaremos creando la bd y añadiendo algunos datos en nuestra 
   
 En la máquina2 hacemos el mismo proceso pero sin insertar los datos, únicamente creamos la base de datos.  
   
-  
+***
    
 **Creación de copia de seguridad de una base de datos usando mysqldump:**  
 Crearemos la copia de seguridad de la base de datos contactos en la máquina 1.  
@@ -23,7 +25,7 @@ Y como comprobamos obtendremos un fichero sql con todos los datos que teníamos a
 Ahora desbloqueamos las tablas entrando en mysql y lanzando:  
 UNLOCK TABLES;  
   
-  
+***
    
 **Restauración de la copia de seguridad en la máquina2:**  
 En primer lugar copiamos el archivo sql creado en la máquina 1 a la máquina 2, lanzando el siguiente comando desde nuestra máquina2:  
@@ -32,7 +34,7 @@ Ahora ejecutamos el archivo sql:
 mysql -p contactos < /root/contactos.sql  
 Y comprobamos que correctamente se han inserado los datos con un select a la tabla datos, de la base de datos contactos.  
   
-  
+***  
    
 **Configuración maestro-esclavo para replicación automática de datos:**  
 Primero comenzamos preparando el maestro, editamos el archivo de configuración de mysql /etc/mysql/my.cnf:  
