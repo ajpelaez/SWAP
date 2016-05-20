@@ -65,9 +65,9 @@ SHOW SLAVE STATUS\G;
   
 Como vemos la configuración esta funcionando correctamente, ahora pasaremos a la práctica, insertaremos datos en el maestro y veremos si los obtenemos en el esclavo:  
 ![alt](http://i.imgur.com/RWluM4H.png)  
-  
-  
-  
+ 
+ 
+ 
 ***
 **Configuración maestro-maestro:**  
 Empezamos por crear el usuario esclavo en nuestra máquina2 igual que hicimos en la 1:  
