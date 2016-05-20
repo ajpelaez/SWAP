@@ -67,7 +67,8 @@ Como vemos la configuración esta funcionando correctamente, ahora pasaremos a la
 ![alt](http://i.imgur.com/RWluM4H.png)  
   
   
-   
+  
+  
 **Configuración maestro-maestro:**  
 Empezamos por crear el usuario esclavo en nuestra máquina2 igual que hicimos en la 1:  
 ![alt](http://i.imgur.com/UdijAzo.png)  
