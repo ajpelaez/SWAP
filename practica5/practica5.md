@@ -12,6 +12,7 @@ En primer lugar comenzaremos creando la bd y añadiendo algunos datos en nuestra 
 En la máquina2 hacemos el mismo proceso pero sin insertar los datos, únicamente creamos la base de datos.  
   
   
+   
 **Creación de copia de seguridad de una base de datos usando mysqldump:**  
 Crearemos la copia de seguridad de la base de datos contactos en la máquina 1.  
 Para ello nos conectamos en el mysql de nuestra máquina 1 y lanzamos:  
@@ -21,7 +22,9 @@ mysqldump contactos -p > /root/contactos.sql
 Y como comprobamos obtendremos un fichero sql con todos los datos que teníamos almacenados.  
 Ahora desbloqueamos las tablas entrando en mysql y lanzando:  
 UNLOCK TABLES;  
-
+  
+  
+   
 **Restauración de la copia de seguridad en la máquina2:**  
 En primer lugar copiamos el archivo sql creado en la máquina 1 a la máquina 2, lanzando el siguiente comando desde nuestra máquina2:  
 scp root@192.168.1.51/root/contactos.sql /root/  
@@ -30,6 +33,7 @@ mysql -p contactos < /root/contactos.sql
 Y comprobamos que correctamente se han inserado los datos con un select a la tabla datos, de la base de datos contactos.  
   
   
+   
 **Configuración maestro-esclavo para replicación automática de datos:**  
 Primero comenzamos preparando el maestro, editamos el archivo de configuración de mysql /etc/mysql/my.cnf:  
 Comentamos:  
@@ -61,8 +65,9 @@ SHOW SLAVE STATUS\G;
   
 Como vemos la configuración esta funcionando correctamente, ahora pasaremos a la práctica, insertaremos datos en el maestro y veremos si los obtenemos en el esclavo:  
 ![alt](http://i.imgur.com/RWluM4H.png)  
-
   
+  
+   
 **Configuración maestro-maestro:**  
 Empezamos por crear el usuario esclavo en nuestra máquina2 igual que hicimos en la 1:  
 ![alt](http://i.imgur.com/UdijAzo.png)  
