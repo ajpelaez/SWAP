@@ -1,9 +1,9 @@
 # Práctica 3 - Balanceo de carga
  
-IP Maquina1: 192.168.1.51  
-IP Maquina2: 192.168.1.52  
-IP Maquina3 (Balanceador): 192.168.1.53  
-Ip Maquina para pruebas: 192.168.1.70  
+IP Máquina1: 192.168.1.51  
+IP Máquina2: 192.168.1.52  
+IP Máquina3 (Balanceador): 192.168.1.53  
+Ip Máquina para pruebas: 192.168.1.70  
 Sistema Operativo: Debian 8  
   
 **-Comenzamos preparando las máquinas 1 y 2:**   

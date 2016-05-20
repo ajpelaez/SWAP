@@ -1,9 +1,9 @@
 # Práctica 4 - Comprobar el rendimiento de servidores web  
   
-IP Maquina1: 192.168.1.51  
-IP Maquina2: 192.168.1.52  
-IP Maquina3 (Balanceador): 192.168.1.53  
-Ip Maquina para lanzar Benchmarks: 192.168.1.70  
+IP Máquina1: 192.168.1.51  
+IP Máquina2: 192.168.1.52  
+IP Máquina3 (Balanceador): 192.168.1.53  
+Ip Máquina para lanzar Benchmarks: 192.168.1.70  
 Sistema Operativo: Debian 8
 
 **Preparación de las máquinas:**  

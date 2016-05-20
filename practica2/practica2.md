@@ -1,7 +1,7 @@
 # Práctica 2 - Clonar la información de un sitio web
 
-IP Maquina1: 192.168.1.51  
-IP Maquina2: 192.168.1.52  
+IP Máquina1: 192.168.1.51  
+IP Máquina2: 192.168.1.52  
 Sistema Operativo: Debian 8  
 
 **-Comenzamos instalando la herramienta rsync:**   
