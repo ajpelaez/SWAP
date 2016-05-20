@@ -64,6 +64,28 @@ Como vemos la configuración esta funcionando correctamente, ahora pasaremos a la
 
   
 **Configuración maestro-maestro:**  
+Empezamos por crear el usuario esclavo en nuestra máquina2 igual que hicimos en la 1:  
+![alt](http://i.imgur.com/UdijAzo.png)  
+  
+Ahora obtenemos los datos de la máquina2 para usarlos en la configuración del esclavo:  
+![alt](http://i.imgur.com/7WBPCGF.png)  
+
+Y pasamos a configurar el esclavo en la máquina1:  
+![alt](http://i.imgur.com/nhzkdRS.png)  
+
+Desbloqueamos las tablas en la máquina2:  
+UNLOCK TABLES;  
+Y comprobamos que el esclavo de la máquina1 este funcionando correctamente:  
+START SALVE;  
+SHOW SLAVE STATUS\G;  
+![alt](http://i.imgur.com/KP7AVOg.png)  
+  
+Todo esta funcionando correctamente ahora pasaremos a ver si nuestra configuración maestro-maestro realmente funciona:  
+![alt](http://i.imgur.com/4fS0vYl.png)  
+
+
+
+
 
 
 
